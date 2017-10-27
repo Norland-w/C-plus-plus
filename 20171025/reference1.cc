@@ -11,6 +11,7 @@ using std::endl;
 void test()
 {
 	int a = 10;
+	//int & ref = 10;//error, 10是常量,字面值,无法取地址, 所以不能绑定到引用上面
 	cout << a << endl;
 	int & ref = a;//引用本质上就是一个变量的别名
 	//引用必须绑定到一个实体上，不能单独存在，必须进行初始化
